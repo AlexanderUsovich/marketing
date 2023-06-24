@@ -1,0 +1,53 @@
+.header
+	// .header__top-inner
+	&__top-inner
+		min-height: 94px
+		display: flex
+		justify-content: space-between
+		align-items: center
+	// .header__content
+	&__content
+		padding: 247px 0 62px
+		height: calc( 100vh - 94px )
+		background: url('../images/header-bg.jpg') no-repeat center 57%/cover
+		text-align: center
+	// .header__descr
+	&__descr
+		color: #FCBB08
+		font-size: 16px
+		font-family: Montserrat
+		font-weight: 700
+		letter-spacing: 2.743px
+		margin-top: 18px
+	// .header__mouse-icon
+	&__mouse-icon
+		margin-top: 180px
+		cursor: pointer
+.logo
+	align-self: flex-start
+.menu
+	// .menu__list
+	&__list
+		display: flex
+		gap: 38px
+	// .menu__link
+	&__link
+		display: block
+		padding: 9px 6px
+		color: #373A39
+		font-size: 12px
+		font-family: Raleway
+		font-weight: 700
+		letter-spacing: 0.6px
+		text-transform: uppercase
+		transition: .3s
+		border-bottom: 1px solid transparent
+		&--active
+			border-bottom: 1px solid #FCBB08
+		&:hover
+			border-bottom: 1px solid #FCBB08
+.maintitle
+	color: #FFF
+	font-size: 72px
+	font-family: Montserrat
+	font-weight: 500

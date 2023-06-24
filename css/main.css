@@ -84,6 +84,24 @@ body {
   padding: 0 15px;
 }
 
+.title {
+  color: #242121;
+  font-size: 60px;
+  font-family: Montserrat;
+  line-height: 125%;
+  letter-spacing: -1.65px;
+}
+.title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #FCBB08;
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+}
+
 .header__top-inner {
   min-height: 94px;
   display: flex;
@@ -141,6 +159,31 @@ body {
   font-size: 72px;
   font-family: Montserrat;
   font-weight: 500;
+}
+
+.about {
+  padding: 152px 159px;
+  background: #F6F8FA;
+}
+.about__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.about__title {
+  font-size: 48px;
+  position: relative;
+  align-self: start;
+}
+.about__text {
+  max-width: 770px;
+  color: #373A39;
+  font-size: 14px;
+  font-family: SF Pro Display;
+  font-weight: 300;
+  line-height: 171.428571%;
+}
+.about__text p + p {
+  margin-top: 10px;
 }
 
 @media (min-width: 1400px) {

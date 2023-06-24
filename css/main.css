@@ -90,6 +90,7 @@ body {
   font-family: Montserrat;
   line-height: 125%;
   letter-spacing: -1.65px;
+  position: relative;
 }
 .title::after {
   content: "";
@@ -171,7 +172,6 @@ body {
 }
 .about__title {
   font-size: 48px;
-  position: relative;
   align-self: start;
 }
 .about__text {
@@ -184,6 +184,103 @@ body {
 }
 .about__text p + p {
   margin-top: 10px;
+}
+
+.expertise {
+  padding: 143px 0 188px;
+}
+.expertise__row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+.expertise__item {
+  width: 370px;
+  padding-left: 85px;
+  cursor: pointer;
+}
+.expertise__item:hover .expertise__subtitle {
+  font-weight: 400;
+}
+.expertise__item--graphic {
+  background: url("../icons/expertise/graphic.svg") no-repeat;
+}
+.expertise__item--development {
+  background: url("../icons/expertise/monitor.svg") no-repeat left -6px;
+}
+.expertise__item--marketing {
+  background: url("../icons/expertise/speaker.svg") no-repeat left -10px;
+}
+.expertise__subtitle {
+  color: #333;
+  font-size: 14px;
+  font-family: Raleway;
+  line-height: 142.857143%;
+  letter-spacing: 4.29px;
+}
+.expertise__text {
+  color: #777;
+  font-size: 14px;
+  font-family: SF Pro Display;
+  font-weight: 300;
+  line-height: 171.428571%;
+  margin-top: 14px;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+.progress__lines {
+  width: 370px;
+  color: #1D1D1D;
+  font-size: 11px;
+  line-height: 181.818182%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.progress__line-bg {
+  background: #F0F0F0;
+  height: 2px;
+  position: relative;
+}
+.progress__line-bg:not(:first-child) {
+  margin-top: 28px;
+}
+.progress__line-over {
+  background: #1D1D1D;
+  height: 2px;
+  position: relative;
+}
+.progress__line-over::after {
+  position: absolute;
+  bottom: -20px;
+  right: -16px;
+}
+.progress__line-over--branding::after {
+  content: "90%";
+}
+.progress__line-over--design::after {
+  content: "80%";
+}
+.progress__line-over--development::after {
+  content: "85%";
+}
+.progress__word {
+  margin-top: 2px;
+}
+.progress__text {
+  max-width: 770px;
+  color: #373A39;
+  font-size: 14px;
+  font-family: SF Pro Display;
+  font-weight: 300;
+  line-height: 171.428571%;
+}
+.progress__text p + p {
+  margin-top: 25px;
 }
 
 @media (min-width: 1400px) {

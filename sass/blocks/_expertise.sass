@@ -1,0 +1,87 @@
+.expertise
+	padding: 143px 0 188px
+	// .expertise__row
+	&__row
+		@include flex
+		margin-top: 120px
+
+	// .expertise__item
+	&__item
+		width: 370px
+		padding-left: 85px
+		cursor: pointer
+		&:hover .expertise__subtitle
+			font-weight: 400
+		&--graphic
+			background: url('../icons/expertise/graphic.svg') no-repeat 
+		&--development
+			background: url('../icons/expertise/monitor.svg') no-repeat left -6px
+		&--marketing
+			background: url('../icons/expertise/speaker.svg') no-repeat left -10px
+
+	// .expertise__subtitle
+	&__subtitle
+		color: #333
+		font-size: 14px
+		font-family: Raleway
+		line-height: 142.857143% // 20px/14
+		letter-spacing: 4.29px
+	// .expertise__text
+	&__text
+		color: #777
+		font-size: 14px
+		font-family: SF Pro Display
+		font-weight: 300
+		line-height: 171.428571% // 24px/14
+		margin-top: 14px
+
+.progress
+	@include flex
+	margin-top: 90px
+	// .progress__lines
+	&__lines
+		width: 370px
+		color: #1D1D1D
+		font-size: 11px
+		line-height: 181.818182% // 20px/11
+		letter-spacing: 1px
+		text-transform: uppercase
+		margin-top: 5px
+	// .progress__line-bg
+	&__line-bg
+		background: #F0F0F0
+		height: 2px
+		position: relative
+		&:not(:first-child)
+			margin-top: 28px
+	// .progress__line-over
+	&__line-over
+		background: #1D1D1D
+		height: 2px
+		position: relative
+		&::after
+			position: absolute
+			bottom: -20px
+			right: -16px
+		&--branding::after
+			content: '90%'
+		&--design::after
+			content: '80%'
+		&--development::after
+			content: '85%'
+
+	&__word
+		margin-top: 2px
+		
+	// .progress__text
+	&__text
+		max-width: 770px
+		color: #373A39
+		font-size: 14px
+		font-family: SF Pro Display
+		font-weight: 300
+		line-height: 171.428571% // 24px/14
+		p+p
+			margin-top: 25px
+
+

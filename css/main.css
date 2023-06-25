@@ -283,6 +283,25 @@ body {
   margin-top: 25px;
 }
 
+.magic {
+  background: #F6F8FA url("../images/magic-bg.jpg") no-repeat 0 85%/50%;
+  padding: 100px 0 215px;
+}
+.magic__inner {
+  max-width: 470px;
+  margin-left: auto;
+}
+.magic__text {
+  margin-top: 85px;
+  color: #373A39;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 171.428571%;
+}
+.magic__text p:not(:first-child) {
+  margin-top: 25px;
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1200px;

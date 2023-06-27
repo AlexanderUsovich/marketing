@@ -608,6 +608,55 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.connection {
+  padding: 145px 0 162px;
+  background: url("../images/map.jpg") no-repeat right 50%/45%;
+}
+
+.form {
+  margin-top: 122px;
+  max-width: 570px;
+}
+.form input, .form textarea {
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  border-bottom: 2px solid #373A39;
+}
+.form input:not(:first-child) {
+  margin-top: 16px;
+}
+.form textarea {
+  margin-top: 37px;
+  resize: none;
+  min-height: 156px;
+}
+.form input::-moz-placeholder, .form textarea::-moz-placeholder {
+  color: #B8B8B8;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 3.709px;
+  text-transform: uppercase;
+}
+.form input::placeholder, .form textarea::placeholder {
+  color: #B8B8B8;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 3.709px;
+  text-transform: uppercase;
+}
+.form button {
+  margin-top: 40px;
+  border: none;
+  padding: 17px 70px 15px;
+  background: #242121;
+  color: #FFF;
+  font-size: 11px;
+  font-family: Montserrat;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1200px;

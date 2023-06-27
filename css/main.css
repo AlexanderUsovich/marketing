@@ -452,6 +452,68 @@ body {
   left: 0;
 }
 
+.slider-blog {
+  padding: 363px 0 114px;
+  background: #F8F6FA;
+}
+.slider-blog__item {
+  font-family: SF Pro Display;
+}
+.slider-blog__item-link {
+  display: inline-block;
+}
+.slider-blog__item-title {
+  color: rgb(36, 33, 33);
+  font-size: 36px;
+  line-height: 144.444444%;
+  max-width: 585px;
+}
+.slider-blog__item-descr {
+  color: rgb(55, 58, 57);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 171.428571%;
+  max-width: 560px;
+  margin-top: 6px;
+}
+.slider-blog .slick-dots {
+  display: flex;
+  gap: 15px;
+  margin-top: 191px;
+}
+.slider-blog .slick-dots button {
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #242121;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.slider-blog .slick-active button {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+.slider-blog .slick-arrow {
+  border: none;
+  background: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-355%);
+  cursor: pointer;
+}
+.slider-blog .slick-next {
+  right: -90px;
+}
+.slider-blog .slick-prev {
+  left: -90px;
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1200px;

@@ -21,8 +21,8 @@ h4,
 h5,
 h6,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -656,6 +656,54 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
   cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+}
+.footer__top {
+  padding: 110px 0 60px;
+  background: #333;
+}
+.footer__logo {
+  display: inline-block;
+  padding: 0 35px 2px;
+  border-bottom: 2px solid #FCBB08;
+}
+.footer__social-list {
+  margin-top: 72px;
+  display: flex;
+  justify-content: center;
+  gap: 33px;
+}
+.footer__social-link {
+  color: #FFF;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.footer__conacts {
+  color: #FFF;
+  font-size: 14px;
+  line-height: 228.571429%;
+  margin-top: 65px;
+}
+.footer__up {
+  margin-top: 57px;
+}
+.footer__copy {
+  padding: 43px 0 41px;
+  background: #2A2C2B;
+}
+.footer__copy p {
+  color: #CCC;
+  font-size: 12px;
+}
+
+.address {
+  font-style: normal;
 }
 
 @media (min-width: 1400px) {

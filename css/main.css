@@ -655,6 +655,7 @@ body {
   font-family: Montserrat;
   font-weight: 700;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 @media (min-width: 1400px) {

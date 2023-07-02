@@ -1,30 +1,134 @@
 @media (min-width: 1400px)
-    //.col-xxl-
-    .container
-        max-width: 1200px 
+	//.col-xxl-
+	.container
+		max-width: 1200px 
+	.section-padding
+		padding: 120px 0
+	.magic
+		background-image: none
+		&__inner
+			margin-left: 0
+			max-width: 100%
+			padding: 0
+		&__text
+			margin-top: 50px
 
-@media (max-width: 1399px)
-    //.col-xl-
-    .container
-        max-width: 1200px 
+@media (max-width: 1425px)
+	//.col-xl-
+	.container
+		max-width: 1200px
+	.magic
+		&__inner
+			padding: 68px 0 
 
 @media (max-width: 1199px)
-    //.col-lg-
-    .container
-        max-width: 960px 
+	//.col-lg-
+	.container
+		max-width: 960px 
+	.title
+		font-size: 48px
+	.progress
+		margin-top: 70px
+	.expertise
+		&__row
+			margin-top: 75px
+			flex-direction: column
+			gap: 30px
+		&__item
+			width: 100%	
+		&__text
+			margin-top: 10px	
 
 @media (max-width: 991px) 
-    //.col-md-
-    .container
-        max-width: 720px
+	//.col-md-
+	.container
+		max-width: 720px
+	.section-padding
+		padding: 120px 0
+	.menu__list
+		gap: 20px
+	.about
+		&__inner
+			flex-direction: column
+			gap: 50px
+		&__title
+			flex-basis: auto
+	.title
+		font-size: 40px
+	.progress
+		flex-direction: column
+		&__lines
+			width: 100%	
+	.magic
+		background-image: none
+		&__inner
+			margin-left: 0
+			max-width: 100%
+			padding: 0
+		&__text
+			margin-top: 50px
 
 @media (max-width: 767px) 
-    //.col-sm-
-    .container
-        max-width: 540px
+	//.col-sm-
+	.container
+		max-width: 540px
+	.header
+		position: relative
+	.logo
+		position: relative
+		z-index: 2
+	.menu
+		&__btn
+			display: block
+		&__list	
+			padding: 94px 0 20px
+			flex-direction: column
+			position: absolute
+			top: -100%
+			left: 0
+			right: 0
+			background-color: #222
+			text-align: center
+			transition: .5s
+			&--active
+				top: 0
+		&__link
+			color: #fff
+			display: inline-block
+			padding: 9px
+			&:hover
+				border-bottom: 1px solid transparent
+	.maintitle
+		font-size: 60px
+
 
 @media (max-width: 575px) 
-    //.col-
-    .container
-        max-width: 100%
- 
+	//.col-
+	.container
+		max-width: 100%
+	.section-padding
+		padding: 80px 0
+	.maintitle
+		font-size: 36px
+	.header
+		&__content
+			min-height: 560px
+			padding: 220px 0 90px
+		&__descr
+			font-size: 12px
+	.title
+		font-size: 30px
+
+@media (max-width: 390px) 
+	.expertise
+		&__item
+			padding-left: 0
+			padding-top: 60px
+
+@media (max-width: 320px)	
+	.maintitle
+		font-size: 30px
+	.header__descr
+		font-size: 10px
+	.title
+		font-size: 27px

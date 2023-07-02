@@ -1,12 +1,15 @@
 .about
-	padding: 152px 159px
+	padding: 152px 0 159px
 	background: #F6F8FA
 	// .about__inner
 	&__inner
-		@include flex
+		display: flex
+		gap: 170px
 	&__title
 		font-size: 48px
 		align-self: start
+		flex-basis: 220px
+		flex-shrink: 0
 	// .about__text
 	&__text
 		max-width: 770px

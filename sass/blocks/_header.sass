@@ -6,8 +6,8 @@
 		align-items: center
 	// .header__content
 	&__content
-		padding: 247px 0 62px
-		height: calc( 100vh - 94px )
+		padding: 240px 0 60px
+		min-height: 660px
 		background: url('../images/header-bg.jpg') no-repeat center 57%/cover
 		text-align: center
 	// .header__descr
@@ -24,7 +24,20 @@
 		cursor: pointer
 .logo
 	align-self: flex-start
+	&--active path
+		fill: #fff
+		transition: .3s
 .menu
+	&__btn
+		display: none
+		border: none
+		background-color: transparent
+		position: relative
+		z-index: 2
+		&--active path, &--active rect
+			fill: #fff
+			transition: .3s
+
 	// .menu__list
 	&__list
 		display: flex

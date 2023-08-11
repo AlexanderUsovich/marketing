@@ -1,12 +1,23 @@
 .slider-blog
-    padding: 363px 0 114px
-    background: #F8F6FA
+    background: #F8F6FA   
     // .slider-blog__item
     &__item
         font-family: SF Pro Display
+        &-inner
+            display: flex
+            flex-direction: column
+            justify-content: center
+            height: 590px
+            text-align: left
+        &-img
+            height: 70%
+            width: 75%
+            object-fit: cover
+            margin-right: auto 
     // .slider-blog__item-link
     &__item-link
         display: inline-block
+        // margin-top: 240px
     // .slider-blog__item-title
     &__item-title
         color: rgb(36, 33, 33)
@@ -26,7 +37,7 @@
     .slick-dots
         display: flex
         gap: 15px
-        margin-top: 191px
+        margin-top: 15px
         & button
             border: none
             background: none
@@ -48,7 +59,7 @@
         background: none
         padding: 0
         position: absolute
-        top: 50%
+        top: calc( 120px + 50% ) 
         transform: translateY(-355%)
         cursor: pointer
     .slick-next

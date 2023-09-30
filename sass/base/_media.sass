@@ -4,6 +4,8 @@
 		max-width: 1200px 
 	.section-padding
 		padding: 120px 0
+	.section-padding-top
+		padding-top: 120px
 	.magic
 		background-image: none
 		&__inner
@@ -11,7 +13,7 @@
 			max-width: 100%
 			padding: 0
 		&__text
-			margin-top: 50px
+			margin-top: 85px
 
 @media (max-width: 1425px)
 	//.col-xl-
@@ -19,9 +21,8 @@
 		max-width: 1200px
 	.section-padding
 		padding: 120px 0
-	.magic
-		&__inner
-			padding: 68px 0 
+	.section-padding-top
+		padding-top: 120px
 	.slider-blog .slick-next
 		right: 0 
 	.slider-blog .slick-prev
@@ -49,6 +50,12 @@
 			width: 100%	
 		&__text
 			margin-top: 10px	
+	.magic
+		&__inner
+			min-height: 700px
+		&__right
+			padding-left: 100px
+		
 	.team__row 
 		margin-top: 70px
 	.pricing__row
@@ -63,8 +70,6 @@
 	//.col-md-
 	.container
 		max-width: 720px
-	.section-padding
-		padding: 120px 0
 	.menu__list
 		gap: 20px
 	.about
@@ -80,11 +85,8 @@
 		&__lines
 			width: 100%	
 	.magic
-		background-image: none
-		&__inner
-			margin-left: 0
-			max-width: 100%
-			padding: 0
+		&__right
+			padding-left: 60px
 		&__text
 			margin-top: 50px
 	.portfolio__header
@@ -122,6 +124,8 @@
 		max-width: 540px
 	.section-padding
 		padding: 100px 0
+	.section-padding-top
+		padding-top: 100px
 	.header
 		position: relative
 		&__top-inner
@@ -153,6 +157,16 @@
 				border-bottom: 1px solid transparent
 	.maintitle
 		font-size: 60px
+	.magic
+		background: #F6F8FA
+		&__inner
+			min-height: 550px
+		&__left
+			display: none
+		&__right
+			width: 100%
+			padding-left: 15px
+			padding-right: 15px
 	.portfolio
 		&__numbers
 			flex-wrap: wrap
@@ -160,7 +174,7 @@
 	.slider-blog
 		&__item-title
 			font-size: 27px
-		img
+		&__item-img
 			width: 100%
 	.team__row
 		gap: 10px
@@ -178,6 +192,8 @@
 		max-width: 100%
 	.section-padding
 		padding: 83px 0
+	.section-padding-top
+		padding-top: 83px
 	.maintitle
 		font-size: 36px
 	.header
@@ -212,7 +228,7 @@
 			&-title 
 				font-size: 22px
 			&-inner
-				height: 460px
+				height: 400px
 	.team
 		&__row
 			flex-direction: column

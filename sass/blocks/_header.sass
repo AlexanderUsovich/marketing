@@ -7,6 +7,7 @@
 		right: 0
 		background-color: #fff
 		z-index: 999
+		box-shadow: 0 3px 15px rgba(#000, .3)
 	// .header__top-inner
 	&__top-inner
 		min-height: 94px
@@ -14,10 +15,21 @@
 		align-items: center
 	// .header__content
 	&__content
+		background: image-set("../images/header-bg.avif" type("image/avif"), "../images/header-bg.webp" type("image/webp"), "../images/header-bg.jpg" type("image/jpeg")) no-repeat 50% 83%/cover
+		max-width: 1440px
+		margin: 0 auto
 		padding: 240px 0 60px
-		min-height: 660px
-		background: image-set('../images/header-bg.avif'  type("image/avif"), '../images/header-bg.webp' type("image/webp"), '../images/header-bg.jpg'  type("image/jpeg")) no-repeat center 57%/cover
 		text-align: center
+		position: relative
+		&-img
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			min-height: 100%
+			width: 100%
+			max-width: 1440px
+
 	// .header__descr
 	&__descr
 		color: #FCBB08

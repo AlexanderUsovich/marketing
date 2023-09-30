@@ -28,8 +28,8 @@ $(function(){
 
 	$('.slider-blog__inner').slick({
 		dots: true,
-		prevArrow: '<button type="button" class="slick-prev"><svg width="35" height="35"><use xlink:href="images/sprite.svg#arrow-left"></use></svg></button>',
-		nextArrow: '<button type="button" class="slick-next"><svg width="35" height="35"><use xlink:href="images/sprite.svg#arrow-right"></use></svg></button>',
+		prevArrow: '<button type="button" class="slick-prev"><svg width="35" height="35" role="img"><title>Левый слайд</title><use xlink:href="images/sprite.svg#arrow-left"></use></svg></button>',
+		nextArrow: '<button type="button" class="slick-next"><svg width="35" height="35" role="img"><title>Правый слайд</title><use xlink:href="images/sprite.svg#arrow-right"></use></svg></button>',
 		responsive: [
 			{
 				breakpoint: 992,
@@ -42,7 +42,7 @@ $(function(){
 			
 	//Плавный скролл
 
-	$(".logo, .menu a, .footer__up").on("click", function (event) {
+	$(".logo, .menu a, .footer__up, .header__mouse-link").on("click", function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
 
@@ -56,8 +56,12 @@ $(function(){
 		$('body,html').animate({scrollTop: top}, 1500);
 	});
 
+	jQuery.event.special.touchstart = {
+        setup: function( _, ns, handle ) {
+            this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
+        }
+    };
 
 });
-
 
 

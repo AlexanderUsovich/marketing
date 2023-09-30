@@ -5,6 +5,7 @@
         url('../fonts/SFProDisplay-Light.woff') format('woff');
     font-weight: 200;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -14,4 +15,5 @@
         url('../fonts/SFProDisplay-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
